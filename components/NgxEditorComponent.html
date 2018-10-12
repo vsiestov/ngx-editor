@@ -870,7 +870,7 @@ inputs provided directly are considered as top priority</p>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-<code>onContentChange(innerHTML: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, innerText: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>onContentChange(innerHTML: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                     </td>
                 </tr>
 
@@ -900,18 +900,6 @@ inputs provided directly are considered as top priority</p>
                                         <tbody>
                                                 <tr>
                                                         <td>innerHTML</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-
-                                                </tr>
-                                                <tr>
-                                                        <td>innerText</td>
                                                         <td>
                                                                     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                         </td>
@@ -1759,7 +1747,7 @@ export class NgxEditorComponent implements OnInit, ControlValueAccessor {
    * Executed from the contenteditable section while the input property changes
    * @param html html string from contenteditable
    */
-  onContentChange(innerHTML: string, innerText: string): void {
+  onContentChange(innerHTML: string): void {
     if (typeof this.onChange &#x3D;&#x3D;&#x3D; &#x27;function&#x27;) {
       this.onChange(innerHTML);
       this.togglePlaceholder(innerHTML);
