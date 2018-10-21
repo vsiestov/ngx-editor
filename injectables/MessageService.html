@@ -106,7 +106,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/ngx-editor/common/services/message.service.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/ngx-editor/common/services/message.service.ts:11</a></div>
                             </td>
                         </tr>
 
@@ -141,7 +141,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/ngx-editor/common/services/message.service.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/ngx-editor/common/services/message.service.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -181,7 +181,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/ngx-editor/common/services/message.service.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/ngx-editor/common/services/message.service.ts:25</a></div>
                             </td>
                         </tr>
 
@@ -251,7 +251,6 @@ const DURATION &#x3D; 7000;
 
 @Injectable()
 export class MessageService {
-
   /** variable to hold the user message */
   private message: Subject&lt;string&gt; &#x3D; new Subject();
 
@@ -270,7 +269,6 @@ export class MessageService {
   sendMessage(message: string): void {
     this.message.next(message);
     this.clearMessageIn(DURATION);
-    return;
   }
 
   /**
@@ -282,9 +280,7 @@ export class MessageService {
     setTimeout(() &#x3D;&gt; {
       this.message.next(undefined);
     }, milliseconds);
-    return;
   }
-
 }
 </code></pre>
     </div>
