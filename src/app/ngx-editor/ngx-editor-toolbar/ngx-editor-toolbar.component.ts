@@ -41,11 +41,21 @@ export class NgxEditorToolbarComponent implements OnInit {
    * Editor configuration
    */
   @Input() config: any;
-  @ViewChild('urlPopover') urlPopover;
-  @ViewChild('imagePopover') imagePopover;
-  @ViewChild('videoPopover') videoPopover;
-  @ViewChild('fontSizePopover') fontSizePopover;
-  @ViewChild('colorPopover') colorPopover;
+  @ViewChild('urlPopover', {
+    static: true
+  }) urlPopover;
+  @ViewChild('imagePopover', {
+    static: true
+  }) imagePopover;
+  @ViewChild('videoPopover', {
+    static: true
+  }) videoPopover;
+  @ViewChild('fontSizePopover', {
+    static: true
+  }) fontSizePopover;
+  @ViewChild('colorPopover', {
+    static: true
+  }) colorPopover;
   /**
    * Emits an event when a toolbar button is clicked
    */
